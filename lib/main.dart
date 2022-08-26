@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'NewsApp',
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.transparent, elevation: 0),
-        primaryColor: Colors.white,
-      ),
+          appBarTheme:
+              const AppBarTheme(iconTheme: IconThemeData(color: Colors.black))
+          //  primaryColor: Colors.black,
+          ),
       home: HomeScreen(),
     );
   }
