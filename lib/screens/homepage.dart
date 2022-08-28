@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/categ_data.dart';
+import 'package:news_app/widgets/category_item.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -29,73 +31,12 @@ class _HomeScreenState extends State<HomeScreen> {
               parent: AlwaysScrollableScrollPhysics()),
           scrollDirection: Axis.horizontal,
           child: Row(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.amberAccent,
-                ),
-                padding: EdgeInsets.all(4),
-                child: Text(
-                  'Business',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                ),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.amberAccent,
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: Text('Sports',
-                      style: TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.bold))),
-              SizedBox(
-                width: 10,
-              ),
-              Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.amberAccent,
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: Text('Politics',
-                      style: TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.bold))),
-              SizedBox(
-                width: 10,
-              ),
-              Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.amberAccent,
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: Text('Entertainment',
-                      style: TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.bold))),
-              SizedBox(
-                width: 10,
-              ),
-              Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.amberAccent,
-                  ),
-                  padding: EdgeInsets.all(4),
-                  child: Text('Education',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold)))
-            ],
+            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: dummyCategories
+                .map((c) => CategoryItem(c.categ_name, c.cat_img))
+                .toList(),
           ),
         ),
-        SingleChildScrollView(
-          child: Column(),
-        )
       ]),
     );
   }
