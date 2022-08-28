@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -48,6 +47,7 @@ class _ArticleScreenState extends State<ArticleScreen> {
         width: MediaQuery.of(context).size.width,
         child: WebView(
             initialUrl: widget.blogUrl,
+            javascriptMode: JavascriptMode.unrestricted,
             onWebViewCreated: (WebViewController webviewcontroller) {
               _completer.complete(webviewcontroller);
             }),

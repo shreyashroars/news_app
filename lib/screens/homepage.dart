@@ -34,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        bottomOpacity: 6,
         centerTitle: true,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,

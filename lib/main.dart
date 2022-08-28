@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'screens/homepage.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
               const AppBarTheme(iconTheme: IconThemeData(color: Colors.black))
           //  primaryColor: Colors.black,
           ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
