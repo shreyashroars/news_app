@@ -18,8 +18,8 @@
 https://user-images.githubusercontent.com/81769088/189340424-f49cc8c8-2381-4908-9972-695b05e0fb88.mp4
 
 ### Article Page Screens  
-<img src="https://user-images.githubusercontent.com/81769088/189341135-ea519656-6cb2-4e7f-ac5a-92c44c8df4e0.jpeg" width=25% height=50%>   
+<img src="https://user-images.githubusercontent.com/81769088/189341135-ea519656-6cb2-4e7f-ac5a-92c44c8df4e0.jpeg" width=28.5% height=50%>   
 
 
-<img src="https://user-images.githubusercontent.com/81769088/189347174-a0ddd6cc-9bd2-4839-87b6-bc206d3c305f.jpeg" width=25% height=50%>
+<img src="https://user-images.githubusercontent.com/81769088/189347174-a0ddd6cc-9bd2-4839-87b6-bc206d3c305f.jpeg" width=28.5% height=50%>
 
